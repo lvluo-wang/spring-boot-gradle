@@ -1,0 +1,61 @@
+#druid
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+  jmx:
+    default-domain: spring-boot-gradle
+    enabled: true
+
+  redis:
+    database: 0
+    host:
+    password:
+    port: 6379
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
+
+#properties setting
+auther:
+  name: zhangjuntao
+  phone: 18500354210
+auth:
+  email: 369090720@qq.com
+
+
+#server port
+server:
+  context-path: /statistics
+  port: 8090
+
+#log config
+logging:
+  level:
+    root: INFO
+    sample.mybatis.mapper: TRACE
+    org.springframework.web.method.annotation: DEBUG
+    com.yx.statistics: DEBUG
+
+
+
+
+
+
