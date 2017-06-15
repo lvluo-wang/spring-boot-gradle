@@ -13,7 +13,7 @@
         update_time
     </sql>
 
-    <resultMap id="ShopActionStatusMap" type="ShopActionStatus" >
+    <resultMap id="ShopActionStatusMap" type="com.yx.statistics.model.ShopActionStatus" >
         <id  column="id" property="id" />
         <result column="merchant_id" property="merchant_id" />
         <result column="action_code" property="action_code" />
@@ -21,7 +21,7 @@
         <result column="update_time" property="update_time" />
     </resultMap>
 
-    <resultMap id="ConstantDictionaryMap" type="ConstantDictionary" >
+    <resultMap id="ConstantDictionaryMap" type="com.yx.statistics.model.ConstantDictionary" >
         <id  column="id" property="id" />
         <result column="code" property="code" />
         <result column="type" property="type" />

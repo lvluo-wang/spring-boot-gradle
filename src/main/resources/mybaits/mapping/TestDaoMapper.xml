@@ -12,7 +12,7 @@
         age
     </sql>
 
-    <resultMap id="ListTest" type="TestPOJO" >
+    <resultMap id="ListTest" type="com.yx.statistics.model.TestPOJO" >
         <id  column="id" property="id" />
         <result column="name" property="name" />
         <result column="age" property="age" />
